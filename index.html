@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakriti Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(231, 248, 250);
+            color: rgb(14, 122, 116);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        section{
+            padding-top:50px ;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background: rgb(231, 248, 250);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: large;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(23, 78, 69);
+        }
+
+        nav ul li a:hover {
+            font-size: 1.2rem;
+            color: rgb(123, 197, 168);
+        }
+
+        .left {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: rgb(23, 78, 69);
+        }
+
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .firstsection>DIV {
+            width: 35%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            color: rgba(59, 58, 58, 0.938);
+            margin-top: 120px;
+            margin-left: 50px;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(23, 78, 69);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+
+        .cv {
+            padding: 2px;
+            font-size: large;
+            border-radius: 12px;
+            background-color: rgb(231, 248, 250);
+            border: 2px solid rgb(74, 120, 113);
+            margin-left: 15px;
+        }
+
+        .second {
+            font-size: 2rem;
+            color: rgba(59, 58, 58, 0.938);
+            font-weight: 350;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .third {
+            font-size: 1.5rem;
+            color: rgba(59, 58, 58, 0.938);
+            font-weight: 150;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+
+        .rightsection img {
+            width: 60%;
+            height: 80%;
+            margin-top: 40px;
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 150px;
+        }
+
+        .Aboutme {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: rgb(23, 78, 69);
+            margin-left: 42%;
+            border-bottom: 3px solid rgb(23, 78, 69);
+            display: inline-block;
+            padding-bottom: 10px;
+            width: 13%;
+            margin-bottom: 150px;
+        }
+
+        .Myskill {
+            font-size: 2rem;
+            font-weight: 500;
+            color: rgb(23, 78, 69);
+            margin-left: 42%;
+            margin-top: 50px;
+            border-bottom: 3px solid rgb(23, 78, 69);
+            display: inline-block;
+            padding-bottom: 10px;
+            width: 8%;
+
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: row;
+            if(width<800px)
+            {
+                display: flex;
+            flex-direction: column;
+            }
+            justify-content: center;
+        }
+
+        .intro>DIV {
+            width: 35%;
+        }
+
+        .photo {
+            width: 250px;
+            height: 250px;
+            margin: 40px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            border: 2px solid #eee;
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .describeintro {
+            font-size: 1.5rem;
+            color: rgba(59, 58, 58, 0.938);
+            font-weight: 150;
+            margin-top: 10px;
+            line-height: 30px;
+            margin-bottom: 100px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+
+        .box> DIV {
+            border-radius: 12px;
+            padding: 30px;
+            width: 230px;
+            height: 250px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            background-color: rgb(231, 248, 250);
+            color: rgb(24, 24, 24);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgb(14, 122, 116);
+            margin-bottom: 15px;
+        }
+
+
+
+
+        .myprojects {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: rgb(23, 78, 69);
+            margin-left: 42%;
+            margin-top: 30px;
+            border-bottom: 3px solid rgb(23, 78, 69);
+            display: inline-block;
+            padding-bottom: 10px;
+            width: 15%;
+            margin-bottom: 50px;
+        }
+
+        .project {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            padding-top: 60px;
+            margin-top: 40px;
+            padding-bottom: 40px;
+
+        }
+
+        .resellit {
+            display: flex;
+            flex-direction: row;
+            margin: 50px;
+
+        }
+
+        .resellfirstsec {
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .resellsecondsec {
+            display: flex;
+            margin: 30px;
+            flex-direction: column;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .reliv {
+            display: flex;
+            flex-direction: row;
+            margin: 50px;
+        }
+
+        .relivfirstsec {
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .relivsecondsec {
+            display: flex;
+            margin: 30px;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .a {
+            width: 200px;
+            height: 450px;
+            margin: 40px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 1em;
+            border: 2px solid #eee;
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .b {
+            width: 700px;
+            height: 500px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 1em;
+            border: 2px solid #eee;
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .Aa {
+            width: 350px;
+            height: 250px;
+            margin-bottom: 30px;
+            margin-right: 20px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 1em;
+            border: 2px solid #eee;
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .Bb {
+            width: 700px;
+            height: 500px;
+            margin-bottom: 30px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 1em;
+            border: 2px solid #eee;
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .contact {
+            font-size: 2rem;
+            font-weight: 600;
+            color: rgb(23, 78, 69);
+            margin-left: 42%;
+            margin-top: 35px;
+            border-bottom: 3px solid rgb(23, 78, 69);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .box2>DIV {
+            border-radius: 12px;
+            padding: 70px;
+            font-size: 1rem;
+            font-weight: 300;
+            width: 200px;
+            background-color: white;
+            color: rgb(24, 24, 24);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Icon {
+            font-size: 3rem;
+            color: rgb(14, 122, 116);
+            margin-bottom:15px;
+        }
+
+        .social {
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: rgb(23, 78, 69);
+            margin-top: 50px;
+            margin-left: 10%;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            color: rgb(24, 24, 24);
+            margin-left: 10%;
+            font-weight: 300;
+            font-size: large;
+            margin-bottom: 30px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .icons a {
+            font-size: 2rem;
+            margin-left: 50px;
+            color: rgb(14, 122, 116);
+            margin-bottom: 100px;
+        }
+
+
+
+        footer {
+            background-color: rgb(23, 78, 69);
+            padding: 23px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            align-items: center;
+            font-size: large;
+            height: 150px;
+        }
+
+        .copyright {
+            font-size: large;
+        }
+
+        .icon {
+            display: flex;
+        }
+
+        .icon a {
+            color: white;
+            font-size: 25px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="left">AAKRITI POUDEL</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/index.html#ABOUT">ABOUT ME</a></li>
+                    <li><a href="/index.html#PROJECTS">PROJECTS</a></li>
+                    <li><a href="/index.html#CONTACT">CONTACT</a></li>
+                    <button class="cv">
+                        <li><a href="images/resume.pdf">DOWNLOAD CV</a></li>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="firstsection">
+        <div class="leftsection">
+            Hi, I am Aakriti Poudel
+            <div class="second">
+                A Computer Engineering Student
+            </div>
+            <div class="third">
+                A dedicated and ambitious student with a strong passion
+                for software development .Possesses excellent analytical
+                and problem-solving skills, and keen attention to detail.
+            </div>
+            <button class="btn">
+                <a href="/index.html#PROJECTS">MY PROJECTS</a>
+            </button>
+
+        </div>
+        <div class="rightsection">
+            <img src="images/me.png">
+
+        </div>
+    </section>
+
+    <section id = "ABOUT">
+    <section class="about">
+        <div class="Aboutme"> About Me</div>
+        <div class="intro">
+            <div>
+                <img src="images/mee.jpg" alt="" class="photo">
+            </div>
+            <div class="describeintro">
+                <p>My name is Aakriti Poudel. I’m an undergraduate student at Kathmandu University. I am a dedicated and
+                    ambitious computer engineering student with a strong passion for software development and
+                    problem-solving.</p>
+                <p>In my free time, I love to listen music, play guitar and I like to travel. I believe travelling
+                    gives
+                    you a new perspective to everything. You get to know a lot about the different cultures, the
+                    cuisines,
+                    their history, the language and all the small unique things every place has to offer.</p>
+            </div>
+
+
+
+
+        </div>
+        <div class="Myskill"> My Skills</div>
+        <div class="box">
+            <div>
+                <div class="heading">
+                    App Development
+                </div>
+                <div class="depth">
+                    I have decent knowledge about app development through FLutter both back-end and front-end
+                </div>
+            </div>
+            <div>
+                <div class="heading">
+                    Clean & Efficient Work
+                </div>
+                <div class="depth">
+                    I have good problem solving skills.
+                </div>
+            </div>
+            <div ]>
+                <div class="heading">
+                    Machine Learning
+                </div>
+                <div class="depth">
+                    Machine learning is more than an API call to scikit-learn. I love math and theory as well as the implementation.
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+
+    <section id="PROJECTS">
+        <div class="myprojects">My Projects </div>
+        <section class="project">
+            <div class="resellit">
+                <div class="resellfirstsec">
+                    <img class="b" src="images/resell.png" alt="">
+                    <div class="row">
+                        <img class="a" src="images/login.jpg" alt="">
+                        <img class="a" src="images/register.jpg" alt="">
+                    </div>
+                    <div class="row">
+                        <img class="a" src="images/otp.jpg" alt="">
+                        <img class="a" src="images/chat.jpg" alt="">
+                    </div>
+                </div>
+                <div class="resellsecondsection">
+                    <img class="a" src="images/donate.jpg" alt="">
+                    <img class="a" src="images/productview.jpg" alt="">
+                    <img class="a" src="images/sell.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="reliv">
+                <div class="relivfirstsec">
+                    <img class="Aa" src="images/dashboard.png" alt="">
+                    <img class="Aa" src="images/request.png" alt="">
+                    <img class="Aa" src="images/campaign.png" alt="">
+                </div>
+                <div class="relivsecondsec">
+                    <img class="Bb" src="images/reliv.png" alt="">
+                    <div class="row">
+                        <img class="Aa" src="images/homereliv.png" alt="">
+                        <img class="Aa" src="images/loginreliv.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="CONTACT">
+        <div class="contact">CONTACT </div>
+
+        <section class="box2">
+            <div class="phonebox">
+                <div class="Icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="number">
+                    +977 984213****
+                </div>
+            </div>
+            <div class="emailbox">
+                <div class="Icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="email">
+                    aakriti.p.03@gmail.com
+                </div>
+            </div>
+            <div class="address">
+                <div class="Icon">
+                    <i class="fa fa-home"></i>
+                </div>
+                <div class="address">
+                    Dhulikhel, Kavre
+                    28-kilo
+                </div>
+            </div>
+        </section>
+
+        <div class="social">
+            Social Media
+        </div>
+
+        <div class="message">
+            <div class="follow">You can contact me any time through these platforms</div>
+        </div>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/aakriti-poudel-a4912b23b/">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100075143972238">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/aakritipoudel15/">
+
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aakritip15">
+
+                <i class="fa fa-github"></i>
+            </a>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footerfirst">
+                <div class="phone">
+                    Phone
+                </div>
+                <div class="number">
+                    +977 984213****
+                </div>
+            </div>
+            <div class="footersecond">
+                <div class="email">Email</div>
+                <div class="mail">
+                    aakriti.p.03@gmail.com
+                </div>
+            </div>
+            <div class="footerthird">
+                <div class="follow">Follow me</div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/aakriti-poudel-a4912b23b/">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100075143972238">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/aakritipoudel15/">
+
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/aakritip15">
+
+                        <i class="fa fa-github"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="footerfourth">
+                <div class="copyright">Copyright © 2023 Aakriti Poudel </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
